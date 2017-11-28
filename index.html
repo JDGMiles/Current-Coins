@@ -1,0 +1,99 @@
+<!DOCTYPE html><html>
+
+<head><title>Coins</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body><center id="desk"></center></body>
+
+</html>
+
+<script type="text/javascript">
+
+var coinfaces=[["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"]];
+
+var columns=Math.round(Math.sqrt(coinfaces.length)+0.4999);
+//columns=3;
+var rows=Math.round(coinfaces.length/columns+0.4999);
+
+var coinwidth=Math.min(Math.floor((window.innerWidth-50)/4), Math.floor((window.innerHeight-50)/rows));
+var coinheight=coinwidth;
+
+var deskcontents="";
+
+for(i=0; i<2; i++){
+  deskcontents=deskcontents+"<table><tr>";
+  for(j=0; j<3; j++){
+    deskcontents=deskcontents+"<td style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\"H"+(3*i+j)+"\" onclick=\"flip("+(3*i+j)+")\" class=\"holder\"><img style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\""+(3*i+j)+"\" src=\"../Coins-Advanced/"+coinfaces[(3*i+j)][0]+"\" draggable=\"false\"></img></td>"
+  }
+  deskcontents=deskcontents+"</tr></table>"
+}
+
+if(coinfaces.length%columns!=0){deskcontents=deskcontents+"<table><tr>";}
+
+for(i=0; i<4; i++){
+  deskcontents=deskcontents+"<td style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\"H"+(6+i)+"\" onclick=\"flip("+(6+i)+")\" class=\"holder\"><img style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\""+(6+i)+"\" src=\"../Coins-Advanced/"+coinfaces[6+i][0]+"\" draggable=\"false\"></img></td>"
+}
+
+if(coinfaces.length%columns!=0){deskcontents=deskcontents+"</tr></table>"}
+
+document.getElementById("desk").innerHTML=deskcontents;
+
+var coinstate=[];
+for(i=0; i<coinfaces.length; i++){
+  if(Math.random()>0.5){coinfaces[i].push("Tick2.png")}
+  else{coinfaces[i].push("Tick2.png")}
+  coinstate[i]={flipping:0, t:0, side:0, faces:coinfaces[i]}
+}
+
+var time=0;
+var maxtime=8;
+var fps=60;
+
+function flip(clickedcoin){
+  coinstate[clickedcoin].side=(coinstate[clickedcoin].side+1)%coinfaces[clickedcoin].length;
+  coinstate[clickedcoin].flipping=1;
+  coinstate[clickedcoin].t=time;
+}
+
+function progressframe(){
+  time++;
+  if(time>maxtime){time=0}
+  for(i=0; i<coinfaces.length; i++){
+    if(coinstate[i].flipping==1){document.getElementById(i).style.width=(Math.cos(2*Math.PI*(time-coinstate[i].t)/maxtime)+1)*coinwidth/2+"px";}
+    if(Math.abs(time-coinstate[i].t)==maxtime/2 && coinstate[i].flipping==1){
+      if(shiftdown==1){coinstate[i].faces[coinstate[i].faces.length-1]="Tick.png"}
+      else if(shiftdown==2){coinstate[i].faces[coinstate[i].faces.length-1]="Tick2.png"}
+      else if(Math.random()>0.5){coinstate[i].faces[coinstate[i].faces.length-1]="Tick.png"}
+      else{coinstate[i].faces[coinstate[i].faces.length-1]="Tick2.png"}
+      document.getElementById(i).src="../Coins-Advanced/"+coinstate[i].faces[coinstate[i].side];
+    }
+    if(coinstate[i].t==time && coinstate[i].flipping==1){coinstate[i].flipping=0;}
+  }
+  setTimeout(progressframe, 1000/fps)
+}
+
+function dynamicresize(){
+  coinwidth=Math.min(Math.floor((window.innerWidth-50)/4), Math.floor((window.innerHeight-50)/rows));
+  coinheight=coinwidth;
+  for(i=0; i<coinfaces.length; i++){
+    document.getElementById("H"+i).style.width=coinwidth+"px";
+    document.getElementById("H"+i).style.height=coinheight+"px";
+    document.getElementById(i).style.width=coinwidth+"px";
+    document.getElementById(i).style.height=coinheight+"px";
+  }
+  setTimeout(dynamicresize, 1000/fps);
+}
+
+var shiftdown=0;
+
+document.body.onkeydown = function(e){
+  if (e.shiftKey) {shiftdown=(shiftdown+1)%3;}
+}
+
+progressframe();
+dynamicresize();
+
+</script>
