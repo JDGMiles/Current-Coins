@@ -1,22 +1,53 @@
-Fresh Air/Exercise
-Washing/Domestic/Property
-Clothes
-Cooking/Food
+Fresh Air
+Stretch
+Handstand/DDR
+Weights
+Cardio
+Washing
+Vacuuming
+Wiping/Dusting/Frames
+Bedclothes/Clothes
+Hygiene
+Cooking
+Food
 Mathematics
 Programming
+Cloud/Social Media
+Wallet Icon
+"Property"
+Bag
+Bike/Car
 Japanese
-Cello
-Piano
-Guitar
-Magic (Legacy, Vintage, Cube)
-Mahjongg
+Korean
+Chinese
+English/German/Dutch
+Swedish/Norwegian/Danish
+Spanish/Portuguese
+Czech/Slovak
+Hungarian
+French
+Russian/Polish
+Arabic/Turkish
+Latin/Greek
+Cello/Violin/Piano/Keyboard/Guitar/Electric-Guitar
+Standard/Modern
+Draft/Sealed
+Legacy/Vintage/Cube
+Commander/Casual/Cube
+Pauper/Pack-Wars
 Starcraft 2
+Hearthstone
+Pokemon TCG(O)
 Ikaruga
-DDR
 3rd Strike
-Travel
+Tekken
+Bridge
+Mahjongg
 Writing
-
+Travel (Seasonal - based on clock)
+Music
+Film
+Reading
 
 ---
 To Do:
