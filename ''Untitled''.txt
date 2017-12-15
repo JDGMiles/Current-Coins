@@ -1,40 +1,40 @@
 Fresh Air
 Stretch
-Handstand/DDR
+Handstand~DDR
 Weights
 Cardio
 Washing
 Vacuuming
-Wiping/Dusting/Frames
-Bedclothes/Clothes
+Wiping~Dusting~Frames
+Bedclothes~Clothes
 Hygiene
 Cooking
 Food
 Mathematics
 Programming
-Cloud/Social Media
+Cloud~Social Media
 Wallet Icon
 "Property"
 Bag
-Bike/Car
+Bike~Car
 Japanese
 Korean
 Chinese
-English/German/Dutch
-Swedish/Norwegian/Danish
-Spanish/Portuguese
-Czech/Slovak
+English~German~Dutch
+Swedish~Norwegian~Danish
+Spanish~Portuguese
+Czech~Slovak
 Hungarian
 French
-Russian/Polish
-Arabic/Turkish
-Latin/Greek
-Cello/Violin/Piano/Keyboard/Guitar/Electric-Guitar
-Standard/Modern
-Draft/Sealed
-Legacy/Vintage/Cube
-Commander/Casual/Cube
-Pauper/Pack-Wars
+Russian~Polish
+Arabic~Turkish
+Latin~Greek
+Cello~Violin~Piano~Keyboard~Guitar~Electric-Guitar
+Standard~Modern
+Draft~Sealed
+Legacy~Vintage~Cube
+Pack-Wars~Casual~Cube
+Commander~Pauper
 Starcraft 2
 Hearthstone
 Pokemon TCG(O)
@@ -48,6 +48,8 @@ Travel (Seasonal - based on clock)
 Music
 Film
 Reading
+
+["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"]
 
 ---
 To Do:
