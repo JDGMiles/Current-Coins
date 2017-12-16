@@ -49,7 +49,7 @@ Music
 Film
 Reading
 
-["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"]
+["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Bag.png"], ["Bike.png"], ["Japanese.png"], ["Korean.png"], ["Chinese.png"], ["German.png"], ["Norwegian.gif"], ["Spanish.gif"], ["Czech.png"], ["Hungarian.png"], ["French.png"], ["Russian.png"], ["Arabic.png"], ["Latin.png"], ["Cello.png"], ["Magic.gif"], ["Magic.png"], ["Magic.gif"], ["Magic.png"], ["Magic.gif"], ["Starcraft.gif"], ["HS.gif"], ["PTCGO.gif"], ["Ikaruga.png"], ["3S.gif"], ["Tekken.gif"], ["Bridge.gif"], ["Mahjongg.png"], ["Work1.gif"], ["Spring.png"], ["Music.gif"], ["Film.png"], ["Reading.png"]
 
 ---
 To Do:

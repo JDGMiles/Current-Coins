@@ -12,7 +12,9 @@
 
 <script type="text/javascript">
 
-var coinfaces=[["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"], ["FreshAir.gif"], ["Cleaning.gif"], ["Clothes.png"], ["Work1.gif"], ["Work2.gif"], ["Japanese.png"], ["Cello.png"], ["Food.gif"], ["Keyboard.png"], ["Guitar2.png"]];
+var coinfaces=[["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Bag.png"], ["Bike.png"], ["English.png"], ["Japanese.png"], ["Korean.png"], ["Chinese.png"], ["Norwegian.png"], ["Spanish.png"], ["Czech.png"], ["Hungarian.png"], ["French.png"], ["Russian.png"], ["Arabic.png"], ["Latin.png"], ["Cello.png"], ["MtG.gif"], ["Cards.png"], ["MtG.gif"], ["Cards.png"], ["MtG.gif"], ["SC2.gif"], ["Hearthstone.gif"], ["PTCGO.gif"], ["Ikaruga.png"], ["3S.gif"], ["Tekken.gif"], ["Bridge.gif"], ["Mahjongg.png"], ["Work1.gif"], ["Spring.png"], ["Music.gif"], ["Film.gif"], ["Books.gif"]];
+
+var mouseovertext=[["FreshAir.gif"], ["Stretch.png"], ["DDR.png"], ["Weights.png"], ["Exercise.gif"], ["Cleaning.gif"], ["Vacuuming.gif"], ["Wiping.gif"], ["Clothes.png"], ["Bathing.gif"], ["Kitchen.png"], ["Food.gif"], ["Mathematics.gif"], ["Work2.gif"], ["Cloud.png"], ["Wallet.png"], ["LivingRoom.png"], ["Bag.png"], ["Bike.png"], ["English.png"], ["Japanese.png"], ["Korean.png"], ["Chinese.png"], ["Norwegian.png"], ["Spanish.png"], ["Czech.png"], ["Hungarian.png"], ["French.png"], ["Russian.png"], ["Arabic.png"], ["Latin.png"], ["Cello.png"], ["MtG.gif"], ["Cards.png"], ["MtG.gif"], ["Cards.png"], ["MtG.gif"], ["SC2.gif"], ["Hearthstone.gif"], ["PTCGO.gif"], ["Ikaruga.png"], ["3S.gif"], ["Tekken.gif"], ["Bridge.gif"], ["Mahjongg.png"], ["Work1.gif"], ["Spring.png"], ["Music.gif"], ["Film.gif"], ["Books.gif"]];
 
 var columns=Math.round(Math.sqrt(coinfaces.length)+0.4999);
 columns=10;
@@ -27,7 +29,7 @@ var deskcontents="<table>";
 for(i=0; i<rows; i++){
   deskcontents=deskcontents+"<tr>";
   for(j=0; j<columns; j++){
-    deskcontents=deskcontents+"<td style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\"H"+(columns*i+j)+"\" onclick=\"flip("+(columns*i+j)+")\" class=\"holder\"><img style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\""+(columns*i+j)+"\" src=\"../Coins-Advanced/"+coinfaces[(columns*i+j)][0]+"\" draggable=\"false\"></img></td>"
+    deskcontents=deskcontents+"<td style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\"H"+(columns*i+j)+"\" onclick=\"flip("+(columns*i+j)+")\" class=\"holder\"><img style=\"width:"+coinwidth+"px; height:"+coinheight+"px;\" id=\""+(columns*i+j)+"\" src=\"../Coins-Advanced/"+coinfaces[(columns*i+j)][0]+"\" draggable=\"false\" title=\""+mouseovertext[columns*i+j]+"\"></img></td>"
   }
   deskcontents=deskcontents+"</tr>"
 }
