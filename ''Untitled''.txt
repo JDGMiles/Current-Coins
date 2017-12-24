@@ -1,3 +1,7 @@
+To Finish:
+Add crossfades to images (use alt text as guide)
+Add reversing perfect loop to vacuuming animation
+
 To Do:
 Resume Annotranslate
 Get to 1-credit level on Ikaruga
